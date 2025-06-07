@@ -162,8 +162,8 @@ section h2 {
 
 /* Hero Section */
 .hero-section {
-    background: url(https://youtu.be/ULfjoCqEo6I) center center/cover; /* Adicione sua imagem de fundo */
-    height: 100vh;
+    width:100%;
+    minheight: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -172,8 +172,8 @@ section h2 {
 }
 
 .hero-content {
-    max-width: 800px;
-    padding: 20px;
+    max-width: 1000px;
+    padding: 200px;
 }
 
 .hero-content h1 {
@@ -232,9 +232,12 @@ section h2 {
 .feature-item p {
     color: var(--gray-text);
 }
-video{
+.hero-content video{
+    width: 500;
     display: flex;
     justify-content: center;
+    animation-play-state: running;
+    
 }
 /* Pricing Section */
 .pricing-section {
