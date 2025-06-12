@@ -19,6 +19,11 @@
     padding: 0;
     box-sizing: border-box;
 }
+section div .espaco{
+ background-color: #0c3520;
+ width: 100%;
+ height: 10%
+}
 
 body {
     font-family: 'Roboto', sans-serif;
@@ -49,13 +54,26 @@ img {
 
 /* Header */
 header {
-    background-color: #e84444;
-    padding: 15px 0;
+    background: #5e2b2b;
+background: linear-gradient(90deg, rgba(94, 43, 43, 1) 0%, rgba(9, 21, 14, 1) 0%, rgba(0, 0, 0, 1) 0%, rgba(232, 68, 68, 1) 44%);
+    padding:  40px;
     position: fixed;
     width: 100%;
     top: 0;
     z-index: 1000;
     backdrop-filter: blur(5px); /* Efeito de vidro em navegadores compatíveis */
+    
+}
+.botoes{
+    padding:1;
+}
+.logo img{
+    width: 20%;
+    height: 20%;
+    left:20px;
+    top: -3%;
+    position: fixed;
+    z-index: 1001;
 }
 
 nav {
@@ -173,6 +191,7 @@ section div.background-section video{
     height: 100%;
     object-fit: cover;
     object-position: center;
+    z-index: 0;
   
     
 }
@@ -182,14 +201,22 @@ section div.box{
     z-index: 1;
     display: flex;    
     padding: 2%;
-    background: linear-gradient(to right, rgba(255, 0, 0, 0.1),transparent);
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.842),transparent);
  justify-content: center;
     align-items: center;
 }
 
+
+section div.box p{
+    width: 50%;
+    height: 50%;
+    display: flex;
+    padding-left:0% ;
+}
+
 .features-section {
     background-color: var(--card-bg);
-    z-index: -2;
+    z-index: -10;
 }
 
 .feature-grid {
